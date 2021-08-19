@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .navbar {
+  width: 100%;
+  background-color: #fff;
+}
+header .navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbar-brand .fas {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+header .navbar .navbar-toggler .far {
+  color: #000;
+}
+header .navbar .collapse .navbar-nav .nav-item {
+  padding: 0 5px;
+  padding-top: 5px;
+  height: 50px;
+  transition: 2s !important;
+}
+header .navbar .collapse .navbar-nav .nav-item :hover {
+  transition: 2s !important;
+}
+header .navbar .collapse .navbar-nav .nav-item:hover::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #00f7ff;
+  transition: 2s !important;
+}
+header .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+header .owl-carousel {
+  position: relative;
+}
+header .owl-carousel .item {
+  height: 95vh;
+}
+header .owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+}
+header .owl-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  display: flex;
+}
+header .owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #f5f5f5d2;
+  margin: 10px;
+  border-radius: 50%;
+}
+header .owl-carousel .owl-dots .active {
+  background-color: #ffa600;
+}
+header .owl-carousel .owl-nav .owl-prev {
+  width: 70px;
+  height: 70px;
+  background: url("../images/png-clipart-arrow-computer-icons-arrow-angle-arrow-removebg-preview.png") no-repeat center center/cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+header .owl-carousel .owl-nav .owl-next {
+  width: 70px;
+  height: 70px;
+  background: url("../images/png-clipart-arrow-computer-icons-arrow-angle-arrow-removebg-preview.png") no-repeat center center/cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  right: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Zen Tokyo Zoo", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+h2:hover {
+  letter-spacing: 8px;
+}
+
+.about {
+  padding: 80px 0;
+}
+.about .left p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+.about .right {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+.about .right img {
+  width: 100%;
+  transition: 1s;
+}
+.about .right img:hover {
+  transform: scale(1.4);
+  cursor: zoom-in;
+}
+
+.teachears {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.teachears .section_title p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+.teachears .section_title p::after {
+  content: "";
+  display: flex;
+  width: 100px;
+  height: 3px;
+  background-color: #0088cc;
+  margin: 30px auto 0 auto;
+}
+.teachears .owl2 .card {
+  width: 95%;
+  height: 410px;
+  overflow: hidden;
+}
+.teachears .owl2 .card .imgBx img {
+  width: 90%;
+  height: 300px;
+  margin: 15px auto;
+}
+.teachears .owl2 .card .content {
+  position: absolute;
+  top: 330px;
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.teachears .owl2 .card .content h3 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.teachears .owl2 .card .content .icons {
+  margin-bottom: 10px;
+}
+.teachears .owl2 .card .content .icons a .fab {
+  font-size: 20px;
+  margin: 4px;
+}
+.teachears .owl2 .card .content .icons a .fab:hover {
+  color: #0088cc;
+}
+.teachears .owl2 .card .content .icons a:nth-child(2) .fab {
+  color: #4267B2;
+}
+.teachears .owl2 .card .content .icons a:nth-child(3) .fab {
+  color: #F77737;
+}
+.teachears .owl2 .card .content .icons a:nth-child(4) .fab {
+  color: red;
+}
+.teachears .owl2 .card .content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+}
+
+.comments h2 {
+  margin: 50px auto;
+}
+.comments h2:hover {
+  letter-spacing: 4px;
+}
+.comments .coments {
+  display: flex;
+  margin-top: 30px;
+}
+.comments .coments .left {
+  height: 100%;
+  text-align: center;
+}
+.comments .coments .left img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+.comments .coments .right h4 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.comments .coments .right h5 {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.comments .coments .right h5 span {
+  font-weight: 600;
+}
+.comments .coments .right p {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Cookie", cursive;
+}
+.comments .section_bottom {
+  background: linear-gradient(69.7deg, #f425f3 1.4%, #f45701 36.2%, #ffcc25 72.2%, #14c406 113%);
+  margin: 50px 0;
+  padding: 30px 0;
+}
+.comments .section_bottom .col-lg-6 {
+  text-align: center;
+}
+.comments .section_bottom .col-lg-6 h4 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Swis721 LtEx BT";
+  color: white;
+}
+.comments .section_bottom .col-lg-6 h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  font-family: "Swis721 LtEx BT";
+  letter-spacing: 3px;
+}
+
+.students .card2 {
+  width: 100%;
+  position: relative;
+}
+.students .card2 .imgg {
+  height: 400px;
+  position: absolute;
+  margin: auto;
+}
+.students .card2 .imgg img {
+  width: 95%;
+  height: 100%;
+  transition: 1.2s;
+}
+.students .card2 .imgg img:hover {
+  transform: scale(0) rotate(360deg);
+}
+.students .card2 .imgg .icons2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  margin-left: -10px;
+}
+.students .card2 .imgg .icons2 a .fab {
+  font-size: 25px;
+  color: #fff;
+  margin: 8px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.students .card2 .imgg .icons2 a:nth-child(2) .fab {
+  background-color: #0088cc;
+}
+.students .card2 .imgg .icons2 a:nth-child(3) .fab {
+  background-color: #1877f2;
+}
+.students .card2 .content2 p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.activities {
+  padding: 100px 0;
+}
+.activities h2 {
+  margin-bottom: -15px;
+}
+.activities .activ1 {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.activities .activ1 .left img {
+  width: 100%;
+}
+.activities .activ1 .right h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.activities .activ1 .right h6 .fas {
+  font-size: 20px;
+  color: red;
+  margin-right: 5px;
+}
+.activities .activ1 .right h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+}
+.activities .activ1 .right h5 {
+  margin: 0;
+}
+.activities .activ1 .right h5 span {
+  font-weight: 700;
+  margin-left: 3px;
+}
+.activities .activ1 .right .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activities .activ1 .right .btns button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 22px;
+  background-color: #1f6eff;
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Zen Loop", cursive;
+  opacity: 0.7;
+}
+.activities .activ2 {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.activities .activ2 .left h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.activities .activ2 .left h6 .fas {
+  font-size: 20px;
+  color: #ffb300;
+  margin-right: 5px;
+}
+.activities .activ2 .left h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+}
+.activities .activ2 .left h5 {
+  margin: 0;
+}
+.activities .activ2 .left h5 span {
+  font-weight: 700;
+  margin-left: 3px;
+}
+.activities .activ2 .left .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activities .activ2 .left .btns button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 22px;
+  background-color: #1f6eff;
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Zen Loop", cursive;
+  opacity: 0.7;
+}
+.activities .activ2 .right img {
+  width: 100%;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #023257;
+}
+footer p, footer a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+footer .footer_p2 {
+  text-transform: capitalize;
+}
+
+@media (max-width: 319px) {
+  header .owl-carousel .item {
+    height: 30vh;
+  }
+}
+@media (max-width: 575px) {
+  header .owl-carousel .item {
+    height: 50vh;
+  }
+}/*# sourceMappingURL=style.css.map */
